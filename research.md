@@ -167,3 +167,10 @@
   - desktop 이메일 텍스트는 `white-space: nowrap`, `overflow-wrap: normal`.
   - 이메일 카드 최소 폭을 380px로 확장.
   - mobile에서는 다시 `white-space: normal`, `overflow-wrap: anywhere`로 좁은 화면 대응.
+
+## 2026-05-06 Trailer link update
+
+- 요청: YouTube 트레일러 링크를 `https://youtu.be/cXeGeoyCsH8?si=VaMcrUqt2qJgCuiT`로 변경.
+- 적용 대상:
+  - `index.html` hero `Watch Trailer` 버튼.
+  - `notion-twomengames-homepage.md` Trailer 링크.

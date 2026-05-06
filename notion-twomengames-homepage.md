@@ -13,7 +13,7 @@ LEGENDARY LUCK DICE / Spawner Hunter is a stage-based 3D roguelike shooting acti
 - Watch Trailer
 
 Steam: https://store.steampowered.com/app/4582650/LEGENDARY_LUCK_DICE/  
-Trailer: https://youtu.be/OZR030vODSo?si=sP7vj4XEfPYvBhcR
+Trailer: https://youtu.be/cXeGeoyCsH8?si=VaMcrUqt2qJgCuiT
 
 ---
 
