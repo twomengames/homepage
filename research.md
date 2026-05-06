@@ -99,3 +99,15 @@
   - `styles.css`의 캡션 위치 스타일 제거.
   - `script.js`의 캡션 번역 키 제거.
 - 스크린샷 원본 안에 포함된 게임 UI 텍스트는 이미지 자체의 일부라 유지.
+
+## 2026-05-06 비즈니스 섹션 문구 및 소셜 링크 추가
+
+- 요청: `퍼블리셔 및 지원사업용` 문구가 사이트 목적을 좁혀 보이므로 자연스럽게 수정.
+- 적용 문구:
+  - EN: `Partnership & Business`
+  - KO: `파트너십 및 비즈니스`
+- 목적: 퍼블리셔/투자/지원사업만을 위한 사이트처럼 보이지 않게, 스튜디오와 게임을 소개하는 공식 홈페이지 톤으로 정리.
+- 추가 링크:
+  - Discord: `https://discord.com/channels/1492011396039180450/1492015751366709481`
+  - TikTok: `https://www.tiktok.com/@twomengames`
+  - YouTube: `https://www.youtube.com/@twomengames-v3h`

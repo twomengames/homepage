@@ -559,7 +559,7 @@ h3 {
   border-top: 1px solid var(--line);
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   padding-top: 28px;
 }
 
@@ -569,9 +569,15 @@ h3 {
   border: 1px solid var(--line);
   color: var(--text);
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   padding: 24px;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.contact-grid a:hover {
+  border-color: rgba(53, 210, 198, 0.55);
+  transform: translateY(-2px);
 }
 
 .footer {
@@ -635,6 +641,12 @@ h3 {
   .about-grid,
   .game-showcase,
   .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero,
+  .about-grid,
+  .game-showcase {
     grid-template-columns: 1fr;
   }
 
