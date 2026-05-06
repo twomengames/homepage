@@ -149,3 +149,12 @@
   - contact grid: desktop `1.4fr 1fr 1fr 1fr`, tablet 2열, mobile 1열.
   - 소셜 아이콘 desktop 56px, mobile 44px로 고정.
   - 아이콘에 `max-width/max-height/object-fit` 적용.
+
+## 2026-05-06 Hero eyebrow removal and partnership copy update
+
+- 요청: 한국어 히어로의 `서울 기반 PC 인디 게임 스튜디오` 텍스트 제거.
+- 요청: 파트너십 섹션 한국어 문구 교체.
+- 적용:
+  - 한국어 `heroEyebrow`를 빈 문자열로 설정.
+  - 빈 i18n 문자열은 `hidden` 처리되도록 `setLanguage` 보강.
+  - 한국어 partnership title/body를 요청 문구로 교체.

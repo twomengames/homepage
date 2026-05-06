@@ -115,3 +115,12 @@
 4. 소셜 아이콘 크기 CSS 고정: 완료.
 5. 문법/링크 검증: 완료.
 6. 커밋 및 푸시: 진행.
+
+## Hero eyebrow and partnership copy plan
+
+1. 현재 한국어 hero/partnership 문구 확인: 완료.
+2. 한국어 hero eyebrow 제거: 완료.
+3. 빈 i18n 문자열 숨김 처리: 완료.
+4. 한국어 partnership 문구 교체: 완료.
+5. JS/i18n 검증: 완료.
+6. 커밋 및 푸시: 진행.

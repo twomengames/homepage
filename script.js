@@ -76,7 +76,7 @@ const translations = {
     navGame: "게임",
     navGallery: "갤러리",
     navContact: "문의",
-    heroEyebrow: "서울 기반 PC 인디 게임 스튜디오",
+    heroEyebrow: "",
     heroSlogan: "끝내기 전에 한 판 더",
     heroCopy: "TwoMenGames는 반복 플레이의 재미를 중심으로 PC 액션 게임을 만드는 인디 게임 스튜디오입니다.",
     wishlist: "Steam 찜하기",
@@ -128,8 +128,8 @@ const translations = {
     galleryEyebrow: "스크린샷 갤러리",
     galleryTitle: "PC 액션을 위한 시네마틱 다크 판타지.",
     pressEyebrow: "파트너십 & 비즈니스",
-    pressTitle: "비즈니스 관계자를 위한 스튜디오 소개",
-    pressCopy: "TwoMenGames는 PC Steam 게임을 개발하는 인디 게임 스튜디오입니다. 현재 개발 중인 타이틀과 핵심 게임성, 개발 진행 상황, 출시 준비 현황을 퍼블리셔와 파트너가 쉽게 검토할 수 있도록 정리했습니다.",
+    pressTitle: "함께할 퍼블리셔와 파트너를 찾고 있습니다",
+    pressCopy: "TwoMenGames는 반복 플레이의 재미를 중심으로 PC Steam 게임을 개발하는 인디 게임 스튜디오입니다. 현재 개발 중인 프로젝트와 출시 준비 현황을 공유하고 있으며, 퍼블리싱 및 다양한 협업 제안을 기다리고 있습니다.",
     steamEyebrow: "Steam PC 게임",
     steamTitle: "지금 찜하기",
     steamCopy: "LEGENDARY LUCK DICE는 핵심 콘텐츠를 갖추고 Steam 출시를 준비 중이며, 현재 폴리싱을 진행하고 있습니다.",
@@ -160,8 +160,10 @@ const setLanguage = (language, shouldSave = true) => {
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
-    if (copy[key]) {
-      element.textContent = copy[key];
+    if (Object.prototype.hasOwnProperty.call(copy, key)) {
+      const value = copy[key];
+      element.textContent = value;
+      element.hidden = value === "";
     }
   });
 
