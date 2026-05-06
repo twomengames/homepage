@@ -192,3 +192,10 @@
 - 대응:
   - `script.js`에서 `.contact-email` 카드의 `href`와 `.contact-value` 표시 텍스트를 런타임에 `contact@twomengames.com`으로 강제 설정.
   - 이메일 문자열은 Cloudflare 재치환을 피하기 위해 JS에서 `["contact", "twomengames.com"].join("@")`로 조립.
+
+## 2026-05-06 Footer tagline update
+
+- 요청: 푸터 오른쪽 하단 `PC Steam 인디 게임 스튜디오`를 `인디 게임 스튜디오`로 변경.
+- 적용:
+  - KO footer: `인디 게임 스튜디오`
+  - EN footer: `Indie Game Studio`

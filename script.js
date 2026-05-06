@@ -67,7 +67,7 @@ const translations = {
     contactEyebrow: "Contact",
     contactTitle: "Business inquiries, publishing, and official channels.",
     contactCopy: "For publishing, partnerships, press, and business inquiries, please contact us by email.",
-    footerTag: "PC Steam Indie Game Studio",
+    footerTag: "Indie Game Studio",
   },
   ko: {
     pageTitle: "TwoMenGames | 인디 게임 스튜디오",
@@ -137,7 +137,7 @@ const translations = {
     contactEyebrow: "문의",
     contactTitle: "비즈니스 문의 및 퍼블리싱 제안",
     contactCopy: "퍼블리싱, 제휴, 보도자료 및 기타 비즈니스 문의는 아래 이메일로 연락해 주세요.",
-    footerTag: "PC Steam 인디 게임 스튜디오",
+    footerTag: "인디 게임 스튜디오",
   },
 };
 
