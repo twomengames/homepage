@@ -565,12 +565,18 @@ h3 {
   overflow: visible;
   padding: 28px;
   text-align: center;
-  transition: border-color 180ms ease, transform 180ms ease;
+  transition: border-color 180ms ease, opacity 180ms ease, transform 180ms ease;
 }
 
 .contact-card:hover {
   border-color: rgba(53, 210, 198, 0.55);
   transform: translateY(-2px);
+}
+
+.contact-card:focus-visible {
+  border-color: rgba(53, 210, 198, 0.75);
+  outline: 2px solid rgba(53, 210, 198, 0.35);
+  outline-offset: 4px;
 }
 
 .contact-social-icon,
@@ -589,8 +595,25 @@ h3 {
 
 .contact-email {
   align-items: flex-start;
+  cursor: pointer;
   min-width: 380px;
   text-align: left;
+  transition: 0.2s ease;
+}
+
+.contact-email:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+}
+
+.contact-label {
+  color: var(--muted);
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .contact-email .contact-value {
