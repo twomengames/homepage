@@ -589,8 +589,14 @@ h3 {
 
 .contact-email {
   align-items: flex-start;
-  min-width: 320px;
+  min-width: 380px;
   text-align: left;
+}
+
+.contact-email .contact-value {
+  overflow-wrap: normal;
+  white-space: nowrap;
+  word-break: normal;
 }
 
 .contact-value {
@@ -764,6 +770,12 @@ h3 {
 
   .contact-card {
     width: 100%;
+  }
+
+  .contact-email .contact-value {
+    overflow-wrap: anywhere;
+    white-space: normal;
+    word-break: break-word;
   }
 
   .contact-social-icon,

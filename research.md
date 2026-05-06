@@ -158,3 +158,12 @@
   - 한국어 `heroEyebrow`를 빈 문자열로 설정.
   - 빈 i18n 문자열은 `hidden` 처리되도록 `setLanguage` 보강.
   - 한국어 partnership title/body를 요청 문구로 교체.
+
+## 2026-05-06 Email one-line desktop fix
+
+- 요청: `twomengames@gmail.com` 마지막 글자가 다음 줄로 넘어가지 않게 한 줄 표시.
+- 원인: `.contact-value`에 desktop에서도 `overflow-wrap: anywhere`가 적용되어 글자 단위 줄바꿈 발생.
+- 적용:
+  - desktop 이메일 텍스트는 `white-space: nowrap`, `overflow-wrap: normal`.
+  - 이메일 카드 최소 폭을 380px로 확장.
+  - mobile에서는 다시 `white-space: normal`, `overflow-wrap: anywhere`로 좁은 화면 대응.

@@ -124,3 +124,11 @@
 4. 한국어 partnership 문구 교체: 완료.
 5. JS/i18n 검증: 완료.
 6. 커밋 및 푸시: 진행.
+
+## Email one-line desktop fix plan
+
+1. 현재 이메일 카드 CSS 확인: 완료.
+2. desktop 이메일 한 줄 표시 규칙 추가: 완료.
+3. mobile 줄바꿈 안전 규칙 유지: 완료.
+4. CSS 검증: 완료.
+5. 커밋 및 푸시: 진행.
