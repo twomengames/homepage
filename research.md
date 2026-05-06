@@ -43,3 +43,13 @@
   - 개인 휴대폰 번호.
   - 파트너십 데모 다운로드 링크.
   - 공개 홈페이지 방향성과 충돌할 수 있는 `레트로` 표현.
+
+## 2026-05-06 한국어/영어 자동 언어 전환
+
+- 요구사항: OS/브라우저 기본 언어가 한국어면 한국어, 영어면 영어로 표시. 사용자가 한국어/영어를 수동 선택 가능해야 함.
+- 구현 방식:
+  - HTML 텍스트 요소에 `data-i18n` 키를 부여.
+  - `script.js`에 `en`, `ko` 번역 딕셔너리를 두고 `textContent`로 적용.
+  - 첫 진입 시 `navigator.language` / `navigator.languages`가 `ko`로 시작하면 한국어, 아니면 영어.
+  - 사용자가 언어 버튼을 누르면 `localStorage.twomengames-lang`에 저장하여 다음 방문에도 유지.
+  - `document.documentElement.lang`도 선택 언어에 맞게 변경.

@@ -17,11 +17,15 @@
         <span>TwoMenGames</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#game">Game</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#game" data-i18n="navGame">Game</a>
+        <a href="#gallery" data-i18n="navGallery">Gallery</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
+      <div class="language-switcher" aria-label="Language selection">
+        <button type="button" data-lang="ko">KO</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
     </header>
 
     <main id="top">
@@ -33,61 +37,61 @@
           </div>
         </div>
         <div class="hero-content reveal">
-          <p class="eyebrow">Seoul-based PC indie game studio</p>
+          <p class="eyebrow" data-i18n="heroEyebrow">Seoul-based PC indie game studio</p>
           <h1>LEGENDARY LUCK DICE</h1>
           <p class="subtitle">Spawner Hunter</p>
-          <p class="slogan">Luck Changes Everything.</p>
-          <p class="hero-copy">
+          <p class="slogan" data-i18n="heroSlogan">Luck Changes Everything.</p>
+          <p class="hero-copy" data-i18n="heroCopy">
             A stage-based 3D roguelike shooting action game that combines active movement,
             bullet-hell pressure, and dice-driven luck into explosive run-by-run growth.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="https://store.steampowered.com/app/4582650/LEGENDARY_LUCK_DICE/" target="_blank" rel="noreferrer">Wishlist on Steam</a>
-            <a class="button" href="#contact">Contact</a>
-            <a class="button ghost" href="https://youtu.be/OZR030vODSo?si=sP7vj4XEfPYvBhcR" target="_blank" rel="noreferrer">Watch Trailer</a>
+            <a class="button primary" href="https://store.steampowered.com/app/4582650/LEGENDARY_LUCK_DICE/" target="_blank" rel="noreferrer" data-i18n="wishlist">Wishlist on Steam</a>
+            <a class="button" href="#contact" data-i18n="contactButton">Contact</a>
+            <a class="button ghost" href="https://youtu.be/OZR030vODSo?si=sP7vj4XEfPYvBhcR" target="_blank" rel="noreferrer" data-i18n="watchTrailer">Watch Trailer</a>
           </div>
         </div>
         <aside class="hero-panel reveal" aria-label="Game highlights">
           <p>PC Steam</p>
-          <strong>3D Roguelike Action Survival</strong>
+          <strong data-i18n="heroPanelTitle">3D Roguelike Action Survival</strong>
           <ul>
-            <li>6-15 minute stage runs</li>
-            <li>Dice-based luck mechanics</li>
-            <li>Hunt Spawner bosses</li>
+            <li data-i18n="heroPanel1">6-15 minute stage runs</li>
+            <li data-i18n="heroPanel2">Dice-based luck mechanics</li>
+            <li data-i18n="heroPanel3">Hunt Spawner bosses</li>
           </ul>
         </aside>
       </section>
 
       <section id="about" class="section about">
         <div class="section-heading reveal">
-          <p class="eyebrow">About the studio</p>
-          <h2>Built by veteran developers for replayable PC action.</h2>
+          <p class="eyebrow" data-i18n="aboutEyebrow">About the studio</p>
+          <h2 data-i18n="aboutTitle">Built by veteran developers for replayable PC action.</h2>
         </div>
         <div class="about-grid">
           <div class="about-copy reveal">
-            <p>
+            <p data-i18n="aboutCopy1">
               TwoMenGames is an indie game studio founded by veteran game developers
               with over 20 years of experience.
             </p>
-            <p>
+            <p data-i18n="aboutCopy2">
               We focus on Unreal Engine development, PC action games, replayability,
               and unique gameplay systems that give players new stories every run.
             </p>
           </div>
           <div class="stat-grid reveal">
-            <div><strong>20+</strong><span>Years of game development experience</span></div>
-            <div><strong>UE</strong><span>Unreal Engine production pipeline</span></div>
-            <div><strong>PC</strong><span>Designed for Steam players</span></div>
-            <div><strong>Seoul</strong><span>Based in Korea</span></div>
+            <div><strong>20+</strong><span data-i18n="statExperience">Years of game development experience</span></div>
+            <div><strong>UE</strong><span data-i18n="statEngine">Unreal Engine production pipeline</span></div>
+            <div><strong>PC</strong><span data-i18n="statPc">Designed for Steam players</span></div>
+            <div><strong>Seoul</strong><span data-i18n="statSeoul">Based in Korea</span></div>
           </div>
         </div>
       </section>
 
       <section id="game" class="section game">
         <div class="section-heading reveal">
-          <p class="eyebrow">Main game</p>
+          <p class="eyebrow" data-i18n="gameEyebrow">Main game</p>
           <h2>LEGENDARY LUCK DICE / Spawner Hunter</h2>
-          <p>
+          <p data-i18n="gameIntro">
             Positioned between Vampire Survivors, Risk of Rain 2, and Returnal,
             the game expands familiar survival growth into a 3D action-focused format.
           </p>
@@ -95,29 +99,29 @@
         <div class="game-showcase">
           <div class="screenshot large reveal">
             <div class="scene battlefield">
-              <span class="scene-title">Spawner breach</span>
+              <span class="scene-title" data-i18n="sceneSpawner">Spawner breach</span>
             </div>
           </div>
           <div class="feature-cards">
             <article class="card reveal">
               <span>01</span>
-              <h3>3D Bullet-Hell Action</h3>
-              <p>Fight dense monster waves with jump, dash, aerial movement, and focused positioning.</p>
+              <h3 data-i18n="feature1Title">3D Bullet-Hell Action</h3>
+              <p data-i18n="feature1Copy">Fight dense monster waves with jump, dash, aerial movement, and focused positioning.</p>
             </article>
             <article class="card reveal">
               <span>02</span>
-              <h3>Dice-Powered Progression</h3>
-              <p>Luck rolls can amplify growth, open comeback chances, and create dramatic jackpot moments.</p>
+              <h3 data-i18n="feature2Title">Dice-Powered Progression</h3>
+              <p data-i18n="feature2Copy">Luck rolls can amplify growth, open comeback chances, and create dramatic jackpot moments.</p>
             </article>
             <article class="card reveal">
               <span>03</span>
-              <h3>Boss Hunting</h3>
-              <p>Grow efficiently, locate randomized Spawner bosses, and clear each stage before time runs out.</p>
+              <h3 data-i18n="feature3Title">Boss Hunting</h3>
+              <p data-i18n="feature3Copy">Grow efficiently, locate randomized Spawner bosses, and clear each stage before time runs out.</p>
             </article>
             <article class="card reveal">
               <span>04</span>
-              <h3>Roguelike Replayability</h3>
-              <p>Fast loops move from level-up to choice, deckbuilding, growth, boss clear, and repeat.</p>
+              <h3 data-i18n="feature4Title">Roguelike Replayability</h3>
+              <p data-i18n="feature4Copy">Fast loops move from level-up to choice, deckbuilding, growth, boss clear, and repeat.</p>
             </article>
           </div>
         </div>
@@ -125,68 +129,68 @@
 
       <section class="section details">
         <div class="section-heading reveal">
-          <p class="eyebrow">Game systems</p>
-          <h2>Designed around control, luck, builds, and items.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="systemsEyebrow">Game systems</p>
+          <h2 data-i18n="systemsTitle">Designed around control, luck, builds, and items.</h2>
+          <p data-i18n="systemsIntro">
             Auto-aim attacks keep the focus on movement and survival decisions,
             while weapons, chips, map items, and dice rolls push each run into a different shape.
           </p>
         </div>
         <div class="detail-grid">
           <article class="detail reveal">
-            <strong>Stage Structure</strong>
-            <span>Goal-based survival stages instead of endless-only play, with 6-15 minute sessions built for repeat runs.</span>
+            <strong data-i18n="detail1Title">Stage Structure</strong>
+            <span data-i18n="detail1Copy">Goal-based survival stages instead of endless-only play, with 6-15 minute sessions built for repeat runs.</span>
           </article>
           <article class="detail reveal">
-            <strong>Movement Depth</strong>
-            <span>3D maps, Z-axis routes, jump, dash, and aerial escape options add strategy beyond flat survival movement.</span>
+            <strong data-i18n="detail2Title">Movement Depth</strong>
+            <span data-i18n="detail2Copy">3D maps, Z-axis routes, jump, dash, and aerial escape options add strategy beyond flat survival movement.</span>
           </article>
           <article class="detail reveal">
-            <strong>Growth Variety</strong>
-            <span>Weapon growth, enhancement chips, passive items, map rewards, and dice outcomes create large build gaps.</span>
+            <strong data-i18n="detail3Title">Growth Variety</strong>
+            <span data-i18n="detail3Copy">Weapon growth, enhancement chips, passive items, map rewards, and dice outcomes create large build gaps.</span>
           </article>
           <article class="detail reveal">
-            <strong>Streamer Moments</strong>
-            <span>Jackpot rolls, risky builds, time attacks, and clutch boss clears create moments that are easy to clip and share.</span>
+            <strong data-i18n="detail4Title">Streamer Moments</strong>
+            <span data-i18n="detail4Copy">Jackpot rolls, risky builds, time attacks, and clutch boss clears create moments that are easy to clip and share.</span>
           </article>
         </div>
       </section>
 
       <section class="section production">
         <div class="section-heading reveal">
-          <p class="eyebrow">Production status</p>
-          <h2>Core content is ready for Steam launch preparation.</h2>
+          <p class="eyebrow" data-i18n="productionEyebrow">Production status</p>
+          <h2 data-i18n="productionTitle">Core content is ready for Steam launch preparation.</h2>
         </div>
         <div class="production-grid reveal">
-          <div><strong>24</strong><span>Weapons completed</span></div>
-          <div><strong>13</strong><span>Enhancement chips</span></div>
-          <div><strong>43</strong><span>Passive items</span></div>
-          <div><strong>9</strong><span>Playable hunters</span></div>
-          <div><strong>11</strong><span>Main and bonus maps</span></div>
-          <div><strong>7</strong><span>Spawner bosses</span></div>
-          <div><strong>6</strong><span>Localized languages</span></div>
-          <div><strong>2026</strong><span>Steam launch target</span></div>
+          <div><strong>24</strong><span data-i18n="prodWeapons">Weapons completed</span></div>
+          <div><strong>13</strong><span data-i18n="prodChips">Enhancement chips</span></div>
+          <div><strong>43</strong><span data-i18n="prodItems">Passive items</span></div>
+          <div><strong>9</strong><span data-i18n="prodHunters">Playable hunters</span></div>
+          <div><strong>11</strong><span data-i18n="prodMaps">Main and bonus maps</span></div>
+          <div><strong>7</strong><span data-i18n="prodBosses">Spawner bosses</span></div>
+          <div><strong>6</strong><span data-i18n="prodLangs">Localized languages</span></div>
+          <div><strong>2026</strong><span data-i18n="prodLaunch">Steam launch target</span></div>
         </div>
       </section>
 
       <section id="gallery" class="section gallery">
         <div class="section-heading reveal">
-          <p class="eyebrow">Screenshot gallery</p>
-          <h2>Cinematic dark fantasy, built for PC action.</h2>
+          <p class="eyebrow" data-i18n="galleryEyebrow">Screenshot gallery</p>
+          <h2 data-i18n="galleryTitle">Cinematic dark fantasy, built for PC action.</h2>
         </div>
         <div class="gallery-grid">
-          <div class="screenshot reveal"><div class="scene dice"><span class="scene-title">Luck roll</span></div></div>
-          <div class="screenshot reveal"><div class="scene wave"><span class="scene-title">Monster wave</span></div></div>
-          <div class="screenshot reveal"><div class="scene hunter"><span class="scene-title">Hunter loadout</span></div></div>
-          <div class="screenshot reveal"><div class="scene boss"><span class="scene-title">Boss encounter</span></div></div>
+          <div class="screenshot reveal"><div class="scene dice"><span class="scene-title" data-i18n="galleryLuck">Luck roll</span></div></div>
+          <div class="screenshot reveal"><div class="scene wave"><span class="scene-title" data-i18n="galleryWave">Monster wave</span></div></div>
+          <div class="screenshot reveal"><div class="scene hunter"><span class="scene-title" data-i18n="galleryHunter">Hunter loadout</span></div></div>
+          <div class="screenshot reveal"><div class="scene boss"><span class="scene-title" data-i18n="galleryBoss">Boss encounter</span></div></div>
         </div>
       </section>
 
       <section id="press-kit" class="section press">
         <div class="press-inner reveal">
-          <p class="eyebrow">For publishers and support programs</p>
-          <h2>Professional materials for business review.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="pressEyebrow">For publishers and support programs</p>
+          <h2 data-i18n="pressTitle">Professional materials for business review.</h2>
+          <p data-i18n="pressCopy">
             TwoMenGames prepares clear studio information, game positioning,
             PC Steam target details, screenshots, and contact channels for publisher
             conversations and Korean government startup support applications.
@@ -198,28 +202,28 @@
 
       <section id="steam" class="section steam">
         <div class="steam-card reveal">
-          <p class="eyebrow">Steam PC game</p>
-          <h2>Wishlist Now</h2>
-          <p>LEGENDARY LUCK DICE is preparing for Steam launch, with core content complete and ongoing polish in progress.</p>
-          <a class="button primary" href="https://store.steampowered.com/app/4582650/LEGENDARY_LUCK_DICE/" target="_blank" rel="noreferrer">Open Steam Page</a>
+          <p class="eyebrow" data-i18n="steamEyebrow">Steam PC game</p>
+          <h2 data-i18n="steamTitle">Wishlist Now</h2>
+          <p data-i18n="steamCopy">LEGENDARY LUCK DICE is preparing for Steam launch, with core content complete and ongoing polish in progress.</p>
+          <a class="button primary" href="https://store.steampowered.com/app/4582650/LEGENDARY_LUCK_DICE/" target="_blank" rel="noreferrer" data-i18n="steamButton">Open Steam Page</a>
         </div>
       </section>
 
       <section id="contact" class="section contact">
         <div class="section-heading reveal">
-          <p class="eyebrow">Contact</p>
-          <h2>Business inquiries, publishing, and support applications.</h2>
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">Business inquiries, publishing, and support applications.</h2>
         </div>
         <div class="contact-grid reveal">
           <a href="mailto:twomengames@gmail.com">twomengames@gmail.com</a>
-          <span>Seoul, Korea</span>
+          <span data-i18n="location">Seoul, Korea</span>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <span>© 2026 TwoMenGames</span>
-      <span>PC Steam Indie Game Studio</span>
+      <span data-i18n="footerTag">PC Steam Indie Game Studio</span>
     </footer>
 
     <script src="script.js"></script>

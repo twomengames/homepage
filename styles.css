@@ -54,7 +54,8 @@ a {
 }
 
 .brand,
-.nav {
+.nav,
+.language-switcher {
   align-items: center;
   display: flex;
 }
@@ -83,6 +84,35 @@ a {
 
 .nav a:hover {
   color: var(--text);
+}
+
+.language-switcher {
+  border: 1px solid var(--line);
+  gap: 4px;
+  padding: 4px;
+}
+
+.language-switcher button {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+  min-height: 30px;
+  min-width: 38px;
+  padding: 0 8px;
+}
+
+.language-switcher button.is-active {
+  background: var(--teal);
+  color: #06100f;
+}
+
+.language-switcher button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
 }
 
 .section {
@@ -535,6 +565,10 @@ h3 {
     justify-content: flex-end;
   }
 
+  .language-switcher {
+    margin-left: auto;
+  }
+
   .hero,
   .about-grid,
   .game-showcase,
@@ -579,6 +613,11 @@ h3 {
 
   .nav {
     justify-content: flex-start;
+  }
+
+  .language-switcher {
+    margin: 14px 0 0;
+    width: max-content;
   }
 
   .section {
