@@ -508,23 +508,6 @@ h3 {
     linear-gradient(140deg, #1b1216, #07090b);
 }
 
-.scene-label {
-  inset: 0;
-  pointer-events: none;
-  position: absolute;
-  z-index: 2;
-}
-
-.scene-title {
-  bottom: 22px;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 13px;
-  font-weight: 800;
-  left: 22px;
-  position: absolute;
-  text-transform: uppercase;
-}
-
 .gallery-grid {
   display: grid;
   gap: 16px;
