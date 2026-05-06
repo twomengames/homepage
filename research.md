@@ -111,3 +111,15 @@
   - Discord: `https://discord.com/channels/1492011396039180450/1492015751366709481`
   - TikTok: `https://www.tiktok.com/@twomengames`
   - YouTube: `https://www.youtube.com/@twomengames-v3h`
+
+## 2026-05-06 Korean copy V2 and gallery logo cleanup
+
+- 요청: 한국어 카피를 더 자연스럽고 전문적인 PC Steam 인디 게임 스튜디오 톤으로 정리.
+- 추가 요구: 스크린샷 갤러리 아래 회사 로고/게임 로고 썸네일 제거.
+- 적용:
+  - 한국어 히어로 슬로건을 `끝내기 전에 한 판 더`로 교체.
+  - About 한국어 문구를 반복 플레이 중심 스튜디오 소개로 교체.
+  - 비즈니스 섹션 한국어 문구를 요청 문구로 교체.
+  - 문의 섹션 한국어 제목/설명을 요청 문구로 교체.
+  - `logo-strip` HTML/CSS 제거.
+  - 갤러리 하단 간격을 충분히 확보해 스크린샷 쇼케이스가 깔끔하게 끝나도록 조정.

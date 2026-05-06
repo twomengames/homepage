@@ -64,6 +64,7 @@ a {
 .brand {
   font-weight: 800;
   gap: 12px;
+  height: 100%;
   min-width: 0;
 }
 
@@ -88,6 +89,7 @@ a {
 
 .language-switcher {
   border: 1px solid var(--line);
+  flex: 0 0 auto;
   gap: 4px;
   padding: 4px;
 }
@@ -508,6 +510,10 @@ h3 {
     linear-gradient(140deg, #1b1216, #07090b);
 }
 
+.gallery {
+  padding-bottom: 132px;
+}
+
 .gallery-grid {
   display: grid;
   gap: 16px;
@@ -516,26 +522,6 @@ h3 {
 
 .gallery-grid .wide {
   grid-column: span 2;
-}
-
-.logo-strip {
-  align-items: center;
-  border-top: 1px solid var(--line);
-  display: flex;
-  gap: 26px;
-  justify-content: center;
-  margin-top: 26px;
-  padding-top: 26px;
-}
-
-.logo-strip img {
-  background: #000;
-  border: 1px solid var(--line);
-  display: block;
-  max-height: 130px;
-  max-width: min(420px, 45%);
-  object-fit: contain;
-  padding: 14px;
 }
 
 .press,
@@ -734,15 +720,6 @@ h3 {
 
   .gallery-grid .wide {
     grid-column: auto;
-  }
-
-  .logo-strip {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .logo-strip img {
-    max-width: 100%;
   }
 
   .footer {
