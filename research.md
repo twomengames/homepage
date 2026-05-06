@@ -174,3 +174,10 @@
 - 적용 대상:
   - `index.html` hero `Watch Trailer` 버튼.
   - `notion-twomengames-homepage.md` Trailer 링크.
+
+## 2026-05-06 Company email update
+
+- 요청: 회사 메일을 `contact@twomengames.com`으로 변경.
+- 적용 대상:
+  - `index.html` 표시 이메일 및 `mailto`.
+  - `notion-twomengames-homepage.md` Business email.

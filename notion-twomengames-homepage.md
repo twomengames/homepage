@@ -159,7 +159,7 @@ The project has completed its core content and is seeking partners to expand mar
 
 ## Contact
 
-**Business email:** twomengames@gmail.com  
+**Business email:** contact@twomengames.com  
 **Location:** Seoul, Korea
 
 ---
