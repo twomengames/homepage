@@ -139,3 +139,13 @@
   - 연락 카드 그리드를 5칸에서 4칸으로 변경.
   - 이메일 카드에 `word-break: break-word`, `overflow-wrap: anywhere` 적용.
   - Discord/TikTok/YouTube 링크에 inline SVG 아이콘 추가.
+
+## 2026-05-06 Contact layout icon/email fix
+
+- 요청: 이메일이 카드 안에서 잘리지 않게 하고, 소셜 아이콘을 배경처럼 크게 보이지 않는 깔끔한 연락 아이콘 크기로 조정.
+- 적용:
+  - 이메일 텍스트를 `.contact-value`로 감싸 줄바꿈 제어.
+  - 이메일 카드 클래스명을 `.contact-email`로 정리하고 desktop에서 더 넓게 배치.
+  - contact grid: desktop `1.4fr 1fr 1fr 1fr`, tablet 2열, mobile 1열.
+  - 소셜 아이콘 desktop 56px, mobile 44px로 고정.
+  - 아이콘에 `max-width/max-height/object-fit` 적용.

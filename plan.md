@@ -106,3 +106,12 @@
 4. Discord/TikTok/YouTube 아이콘 추가: 완료.
 5. 링크/i18n/JS 검증: 완료.
 6. 커밋 및 푸시: 진행.
+
+## Contact layout icon/email fix plan
+
+1. 현재 contact HTML/CSS 확인: 완료.
+2. 이메일 텍스트 래퍼 추가: 완료.
+3. desktop/tablet/mobile grid 수정: 완료.
+4. 소셜 아이콘 크기 CSS 고정: 완료.
+5. 문법/링크 검증: 완료.
+6. 커밋 및 푸시: 진행.

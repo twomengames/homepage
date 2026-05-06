@@ -544,8 +544,9 @@ h3 {
 .contact-grid {
   border-top: 1px solid var(--line);
   display: grid;
-  gap: 16px;
-  grid-template-columns: minmax(260px, 1.3fr) repeat(3, minmax(150px, 1fr));
+  align-items: stretch;
+  gap: 20px;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
   padding-top: 28px;
 }
 
@@ -555,11 +556,15 @@ h3 {
   border: 1px solid var(--line);
   color: var(--text);
   display: flex;
+  flex-direction: column;
   font-size: 18px;
   font-weight: 700;
-  gap: 12px;
+  gap: 0;
+  justify-content: center;
   min-width: 0;
-  padding: 24px;
+  overflow: visible;
+  padding: 28px;
+  text-align: center;
   transition: border-color 180ms ease, transform 180ms ease;
 }
 
@@ -568,15 +573,32 @@ h3 {
   transform: translateY(-2px);
 }
 
-.contact-card svg {
+.contact-social-icon,
+.contact-card svg,
+.contact-card img {
   fill: currentColor;
   flex: 0 0 auto;
-  height: 24px;
-  width: 24px;
+  height: 56px;
+  margin-bottom: 24px;
+  max-height: 56px;
+  max-width: 56px;
+  object-fit: contain;
+  opacity: 0.85;
+  width: 56px;
 }
 
-.email-card {
+.contact-email {
+  align-items: flex-start;
+  min-width: 320px;
+  text-align: left;
+}
+
+.contact-value {
+  display: block;
+  font-size: clamp(16px, 1.2vw, 22px);
+  line-height: 1.4;
   overflow-wrap: anywhere;
+  white-space: normal;
   word-break: break-word;
 }
 
@@ -639,8 +661,7 @@ h3 {
 
   .hero,
   .about-grid,
-  .game-showcase,
-  .contact-grid {
+  .game-showcase {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -648,6 +669,14 @@ h3 {
   .about-grid,
   .game-showcase {
     grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-email {
+    min-width: 0;
   }
 
   .hero {
@@ -731,6 +760,19 @@ h3 {
   .production-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    width: 100%;
+  }
+
+  .contact-social-icon,
+  .contact-card svg,
+  .contact-card img {
+    height: 44px;
+    max-height: 44px;
+    max-width: 44px;
+    width: 44px;
   }
 
   .gallery-grid .wide {
