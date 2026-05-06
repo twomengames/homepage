@@ -75,3 +75,18 @@
   - 히어로 타이틀: 게임 로고 이미지.
   - 헤더 브랜드: 회사 로고.
   - 게임 쇼케이스/갤러리: 실제 게임 스크린샷.
+
+## 2026-05-06 로고 크기/헤더 레이아웃 수정
+
+- 요청: 회사 로고가 너무 크게 표시되어 헤더/히어로를 덮는 문제 수정.
+- 새 원본:
+  - `F:\홈페이지디자인파일\Game_LOGO.png`
+  - `F:\홈페이지디자인파일\light_company_log.png`
+- 적용:
+  - 기존 `assets/legendary-luck-dice-logo.png`를 새 게임 로고로 교체.
+  - 기존 회사 로고 파일을 새 `light_company_log.png` 기준으로 교체.
+  - 헤더 높이: desktop 72px, mobile 64px.
+  - 헤더 회사 로고: desktop height 48px / max-width 160px, mobile height 36px / max-width 120px.
+  - `object-fit: contain`으로 비율 유지.
+  - 모바일에서도 `.site-header`를 `display: flex`로 유지해 로고가 페이지를 밀거나 덮지 않도록 함.
+  - 회사 로고는 헤더와 갤러리 로고 스트립에만 사용, 히어로에는 게임 로고와 게임 스크린샷 배경만 사용.
