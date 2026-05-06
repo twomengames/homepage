@@ -53,3 +53,25 @@
   - 첫 진입 시 `navigator.language` / `navigator.languages`가 `ko`로 시작하면 한국어, 아니면 영어.
   - 사용자가 언어 버튼을 누르면 `localStorage.twomengames-lang`에 저장하여 다음 방문에도 유지.
   - `document.documentElement.lang`도 선택 언어에 맞게 변경.
+
+## 2026-05-06 실제 로고/스크린샷 자산 추가
+
+- 원본 폴더: `F:\홈페이지디자인파일`.
+- 복사 위치: `assets/`.
+- 회사 로고:
+  - `twomengames-logo-dark.png`
+  - `twomengames-logo-light.png`
+- 게임 로고:
+  - `legendary-luck-dice-logo.png`
+- 게임 스크린샷:
+  - `screenshot-boss-eye.jpg`
+  - `screenshot-angel-pig.jpg`
+  - `screenshot-fire-canyon.jpg`
+  - `screenshot-rooftop-wave.jpg`
+  - `screenshot-dice-field.jpg`
+  - `screenshot-garden-boss.jpg`
+- 반영 위치:
+  - 히어로 배경: 실제 보스 전투 스크린샷.
+  - 히어로 타이틀: 게임 로고 이미지.
+  - 헤더 브랜드: 회사 로고.
+  - 게임 쇼케이스/갤러리: 실제 게임 스크린샷.

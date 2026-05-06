@@ -65,15 +65,14 @@ a {
   gap: 12px;
 }
 
-.brand-mark {
-  align-items: center;
-  background: linear-gradient(135deg, var(--teal), var(--gold));
-  color: #07100f;
-  display: inline-flex;
-  font-size: 12px;
-  height: 36px;
-  justify-content: center;
-  width: 36px;
+.brand-logo {
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: block;
+  height: 40px;
+  object-fit: contain;
+  padding: 4px;
+  width: 40px;
 }
 
 .nav {
@@ -134,10 +133,9 @@ a {
 
 .hero-bg {
   background:
-    linear-gradient(90deg, rgba(7, 9, 11, 0.96), rgba(7, 9, 11, 0.42)),
-    radial-gradient(circle at 68% 44%, rgba(53, 210, 198, 0.22), transparent 28%),
-    radial-gradient(circle at 78% 28%, rgba(217, 169, 79, 0.16), transparent 22%),
-    linear-gradient(135deg, #0b0f14, #172024 42%, #08090b);
+    linear-gradient(90deg, rgba(7, 9, 11, 0.96), rgba(7, 9, 11, 0.5) 48%, rgba(7, 9, 11, 0.72)),
+    linear-gradient(0deg, rgba(7, 9, 11, 0.78), rgba(7, 9, 11, 0.16) 48%, rgba(7, 9, 11, 0.78)),
+    url("assets/screenshot-boss-eye.jpg") center / cover no-repeat;
   inset: 0 calc(50% - 50vw);
   position: absolute;
   z-index: -2;
@@ -178,6 +176,7 @@ a {
   top: 28%;
   transform: rotate(10deg);
   width: 220px;
+  opacity: 0.72;
 }
 
 .hero-dice span {
@@ -219,6 +218,25 @@ h1 {
   line-height: 0.9;
   margin-bottom: 12px;
   max-width: 820px;
+}
+
+.sr-only {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.game-logo {
+  display: block;
+  filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.72));
+  margin-bottom: 18px;
+  max-width: min(680px, 100%);
+  width: 100%;
 }
 
 h2 {
@@ -420,10 +438,27 @@ h3 {
   border: 1px solid var(--line);
   min-height: 260px;
   overflow: hidden;
+  position: relative;
 }
 
 .screenshot.large {
   min-height: 640px;
+}
+
+.screenshot img {
+  display: block;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  width: 100%;
+}
+
+.screenshot::after {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.74), transparent 46%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
 }
 
 .scene {
@@ -470,6 +505,13 @@ h3 {
     linear-gradient(140deg, #1b1216, #07090b);
 }
 
+.scene-label {
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+
 .scene-title {
   bottom: 22px;
   color: rgba(255, 255, 255, 0.82);
@@ -484,6 +526,30 @@ h3 {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gallery-grid .wide {
+  grid-column: span 2;
+}
+
+.logo-strip {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  margin-top: 26px;
+  padding-top: 26px;
+}
+
+.logo-strip img {
+  background: #000;
+  border: 1px solid var(--line);
+  display: block;
+  max-height: 130px;
+  max-width: min(420px, 45%);
+  object-fit: contain;
+  padding: 14px;
 }
 
 .press,
@@ -642,6 +708,19 @@ h3 {
   .detail-grid,
   .production-grid {
     grid-template-columns: 1fr;
+  }
+
+  .gallery-grid .wide {
+    grid-column: auto;
+  }
+
+  .logo-strip {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .logo-strip img {
+    max-width: 100%;
   }
 
   .footer {
