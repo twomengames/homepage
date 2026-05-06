@@ -181,3 +181,14 @@
 - 적용 대상:
   - `index.html` 표시 이메일 및 `mailto`.
   - `notion-twomengames-homepage.md` Business email.
+
+## 2026-05-06 Cloudflare cached email workaround
+
+- 상황: GitHub raw와 로컬 `index.html`은 `contact@twomengames.com`으로 변경됐지만, 공개 도메인은 Cloudflare Email Protection이 적용된 오래된 HTML 캐시를 내려주며 `twomengames@gmail.com`을 표시함.
+- 확인:
+  - `raw.githubusercontent.com/.../index.html`: `contact@twomengames.com`.
+  - `https://twomengames.com`: `/cdn-cgi/l/email-protection` 형태로 old Gmail 주소가 obfuscated 상태.
+  - `script.js`는 최신 버전이 내려옴.
+- 대응:
+  - `script.js`에서 `.contact-email` 카드의 `href`와 `.contact-value` 표시 텍스트를 런타임에 `contact@twomengames.com`으로 강제 설정.
+  - 이메일 문자열은 Cloudflare 재치환을 피하기 위해 JS에서 `["contact", "twomengames.com"].join("@")`로 조립.

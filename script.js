@@ -144,6 +144,20 @@ const translations = {
 const header = document.querySelector("[data-header]");
 const langButtons = document.querySelectorAll("[data-lang]");
 const savedLanguage = localStorage.getItem("twomengames-lang");
+const companyEmail = ["contact", "twomengames.com"].join("@");
+
+const updateContactEmail = () => {
+  const emailCard = document.querySelector(".contact-email");
+  const emailValue = emailCard?.querySelector(".contact-value");
+
+  if (emailCard) {
+    emailCard.setAttribute("href", `mailto:${companyEmail}`);
+  }
+
+  if (emailValue) {
+    emailValue.textContent = companyEmail;
+  }
+};
 
 const detectLanguage = () => {
   const languages = navigator.languages?.length ? navigator.languages : [navigator.language];
@@ -183,6 +197,7 @@ langButtons.forEach((button) => {
 });
 
 setLanguage(savedLanguage || detectLanguage(), Boolean(savedLanguage));
+updateContactEmail();
 
 const updateHeader = () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 12);
