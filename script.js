@@ -148,16 +148,48 @@ const companyEmail = ["contact", "twomengames.com"].join("@");
 
 const updateContactEmail = () => {
   const emailCard = document.querySelector(".contact-email");
+  const emailLink = emailCard?.querySelector(".contact-email-link");
   const emailValue = emailCard?.querySelector(".contact-value");
+  const copyButton = emailCard?.querySelector(".copy-email-button");
 
-  if (emailCard) {
-    emailCard.setAttribute("href", `mailto:${companyEmail}`);
+  if (emailLink) {
+    emailLink.setAttribute("href", `mailto:${companyEmail}`);
   }
 
   if (emailValue) {
     emailValue.textContent = companyEmail;
   }
+
+  if (copyButton) {
+    copyButton.dataset.email = companyEmail;
+  }
 };
+
+document.querySelectorAll(".copy-email-button").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const email = button.dataset.email || companyEmail;
+    const originalText = button.textContent.trim() || "Copy Email";
+
+    try {
+      await navigator.clipboard.writeText(email);
+    } catch (error) {
+      const textarea = document.createElement("textarea");
+      textarea.value = email;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+    }
+
+    button.textContent = "Copied!";
+
+    setTimeout(() => {
+      button.textContent = originalText;
+    }, 1500);
+  });
+});
 
 const detectLanguage = () => {
   const languages = navigator.languages?.length ? navigator.languages : [navigator.language];

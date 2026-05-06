@@ -199,3 +199,8 @@
 - 적용:
   - KO footer: `인디 게임 스튜디오`
   - EN footer: `Indie Game Studio`
+
+## 2026-05-06 Contact copy email button
+
+- Request: Add a subtle `Copy Email` utility button without removing the `mailto:` email link.
+- Implementation note: Use a non-anchor email card container, keep the email address as an internal `mailto:` link, and copy with Clipboard API plus textarea fallback.

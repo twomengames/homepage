@@ -595,15 +595,10 @@ h3 {
 
 .contact-email {
   align-items: flex-start;
-  cursor: pointer;
+  gap: 18px;
+  justify-content: center;
   min-width: 380px;
   text-align: left;
-  transition: 0.2s ease;
-}
-
-.contact-email:hover {
-  opacity: 0.95;
-  transform: translateY(-2px);
 }
 
 .contact-label {
@@ -616,10 +611,54 @@ h3 {
   text-transform: uppercase;
 }
 
+.contact-email-link {
+  color: inherit;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.contact-email-link:focus-visible {
+  outline: 2px solid rgba(53, 210, 198, 0.35);
+  outline-offset: 4px;
+}
+
 .contact-email .contact-value {
   overflow-wrap: normal;
   white-space: nowrap;
   word-break: normal;
+}
+
+.copy-email-button {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.02em;
+  min-height: 38px;
+  padding: 0 18px;
+  transition: background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+.copy-email-button:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.32);
+  transform: translateY(-1px);
+}
+
+.copy-email-button:active {
+  transform: translateY(0);
+}
+
+.copy-email-button:focus-visible {
+  border-color: rgba(53, 210, 198, 0.75);
+  outline: 2px solid rgba(53, 210, 198, 0.35);
+  outline-offset: 3px;
 }
 
 .contact-value {
@@ -799,6 +838,15 @@ h3 {
     overflow-wrap: anywhere;
     white-space: normal;
     word-break: break-word;
+  }
+
+  .contact-email {
+    align-items: center;
+    text-align: center;
+  }
+
+  .copy-email-button {
+    width: auto;
   }
 
   .contact-social-icon,
