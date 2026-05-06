@@ -67,7 +67,6 @@ const translations = {
     contactEyebrow: "Contact",
     contactTitle: "Business inquiries, publishing, and official channels.",
     contactCopy: "For publishing, partnerships, press, and business inquiries, please contact us by email.",
-    location: "Seoul, Korea",
     footerTag: "PC Steam Indie Game Studio",
   },
   ko: {
@@ -138,7 +137,6 @@ const translations = {
     contactEyebrow: "문의",
     contactTitle: "비즈니스 문의 및 퍼블리싱 제안",
     contactCopy: "퍼블리싱, 제휴, 보도자료 및 기타 비즈니스 문의는 아래 이메일로 연락해 주세요.",
-    location: "대한민국 서울",
     footerTag: "PC Steam 인디 게임 스튜디오",
   },
 };

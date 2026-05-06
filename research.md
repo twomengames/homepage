@@ -130,3 +130,12 @@
 - 적용:
   - 한국어 About 제목: `끝내기 전에 한 판 더`
   - 한국어 About 본문을 반복 플레이 중심 스튜디오 소개와 20년 이상 경험 기반 문장으로 정리.
+
+## 2026-05-06 Contact section polish
+
+- 요청: 연락 섹션에서 `대한민국 서울` 제거, 이메일 주소 잘림 수정, Discord/TikTok/YouTube 공식 아이콘 추가.
+- 적용:
+  - 위치 카드 제거.
+  - 연락 카드 그리드를 5칸에서 4칸으로 변경.
+  - 이메일 카드에 `word-break: break-word`, `overflow-wrap: anywhere` 적용.
+  - Discord/TikTok/YouTube 링크에 inline SVG 아이콘 추가.

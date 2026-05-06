@@ -545,25 +545,39 @@ h3 {
   border-top: 1px solid var(--line);
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: minmax(260px, 1.3fr) repeat(3, minmax(150px, 1fr));
   padding-top: 28px;
 }
 
-.contact-grid a,
-.contact-grid span {
+.contact-card {
+  align-items: center;
   background: var(--panel);
   border: 1px solid var(--line);
   color: var(--text);
-  display: block;
+  display: flex;
   font-size: 18px;
   font-weight: 700;
+  gap: 12px;
+  min-width: 0;
   padding: 24px;
   transition: border-color 180ms ease, transform 180ms ease;
 }
 
-.contact-grid a:hover {
+.contact-card:hover {
   border-color: rgba(53, 210, 198, 0.55);
   transform: translateY(-2px);
+}
+
+.contact-card svg {
+  fill: currentColor;
+  flex: 0 0 auto;
+  height: 24px;
+  width: 24px;
+}
+
+.email-card {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .footer {
@@ -714,7 +728,8 @@ h3 {
   .stat-grid,
   .gallery-grid,
   .detail-grid,
-  .production-grid {
+  .production-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
