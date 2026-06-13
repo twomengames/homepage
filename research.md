@@ -204,3 +204,11 @@
 
 - Request: Add a subtle `Copy Email` utility button without removing the `mailto:` email link.
 - Implementation note: Use a non-anchor email card container, keep the email address as an internal `mailto:` link, and copy with Clipboard API plus textarea fallback.
+
+## 2026-06-13 Publisher/publishing copy removal
+
+- Request: Remove copy that says TwoMenGames is looking for publishers or accepting publishing proposals.
+- Checked files: `index.html`, `script.js`, `notion-twomengames-homepage.md`.
+- RED check: `퍼블리셔`, `퍼블리싱`, `publisher`, `publishing`, `publishers`, and `publisher review` were found before editing.
+- Direction: Keep the page as an official studio/game profile with player, press, and general business contact wording only.
+- Git status: `origin` is connected to `https://github.com/twomengames/homepage.git`; branch is `master`.

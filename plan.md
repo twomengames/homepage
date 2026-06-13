@@ -125,6 +125,15 @@
 5. JS/i18n 검증: 완료.
 6. 커밋 및 푸시: 진행.
 
+## Publisher/publishing copy removal plan
+
+1. Search all publisher/publishing proposal wording and confirm failing RED check: complete.
+2. Replace static fallback HTML copy in `index.html`: complete.
+3. Replace EN/KO i18n copy in `script.js`: complete.
+4. Replace reusable Notion draft copy in `notion-twomengames-homepage.md`: complete.
+5. Re-run forbidden-word search and syntax checks: complete.
+6. Commit and push to `origin/master` so GitHub Pages can publish: complete.
+
 ## Email one-line desktop fix plan
 
 1. 현재 이메일 카드 CSS 확인: 완료.

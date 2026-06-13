@@ -1,5 +1,10 @@
 # Error Log
 
+## 2026-06-13 Publisher/publishing copy removal
+- Situation: Publisher/publishing proposal wording can remain in both static fallback HTML and `script.js` i18n strings.
+- Prevention: Search both `index.html` and `script.js` for Korean and English variants before and after edits.
+- Deploy note: This static site has prior stale GitHub Pages behavior, so push a new commit to `origin/master` after verification.
+
 ## 2026-05-06 GitHub Pages stale deploy after Cloudflare purge
 - Situation: Cloudflare cache purge completed, but twomengames.com still served old files.
 - Cause: GitHub Pages deployment for the latest commit failed/cancelled because GitHub did not acquire a hosted runner.

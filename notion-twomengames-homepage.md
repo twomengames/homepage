@@ -29,7 +29,7 @@ We focus on:
 - Unique gameplay systems
 - Clean and stylish user experience
 
-Our goal is to build focused PC games that are easy to understand, exciting to replay, and strong enough for global Steam players, publisher review, and Korean government startup support applications.
+Our goal is to build focused PC games that are easy to understand, exciting to replay, and clear enough for global Steam players, press, and official business communication.
 
 ---
 
@@ -136,14 +136,14 @@ Steam page link: [Add Steam URL]
 
 ---
 
-## Business / Publisher / Support Program
+## Business / Official Channels
 
 TwoMenGames prepares clear studio and game information for:
 
-- Publisher inquiries
-- Business partnerships
-- Korean government startup support applications
 - Press and creator communication
+- Business contact
+- Steam players
+- Official community channels
 
 Available materials:
 
@@ -153,7 +153,7 @@ Available materials:
 - Gameplay feature summary
 - Contact information
 
-The project has completed its core content and is seeking partners to expand market reach, polish, launch visibility, and commercial performance.
+The project has completed its core content and shares updates through official channels for launch visibility and community communication.
 
 ---
 
