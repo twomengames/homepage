@@ -5,6 +5,11 @@
 - Prevention: Search both `index.html` and `script.js` for Korean and English variants before and after edits.
 - Deploy note: This static site has prior stale GitHub Pages behavior, so push a new commit to `origin/master` after verification.
 
+## 2026-06-13 GitHub push account mismatch
+- Situation: `git push origin master` failed with `Permission to twomengames/homepage.git denied to leegunsoodev`.
+- Cause: GitHub CLI/keyring had both `leegunsoodev` and `twomengames`, but `leegunsoodev` was the active account for HTTPS git operations.
+- Fix: Run `gh auth switch -h github.com -u twomengames`, confirm `gh auth status`, then push again.
+
 ## 2026-05-06 GitHub Pages stale deploy after Cloudflare purge
 - Situation: Cloudflare cache purge completed, but twomengames.com still served old files.
 - Cause: GitHub Pages deployment for the latest commit failed/cancelled because GitHub did not acquire a hosted runner.
