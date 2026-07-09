@@ -220,3 +220,12 @@
 - RED check: `AmazingSlotSurvivor` was not present in public title text before editing.
 - Boundary: Keep `assets/legendary-luck-dice-logo.png` and the existing Steam URL slug unchanged because they are asset/link references, not visible title copy.
 - Cache note: update the `script.js` query string when changing i18n text.
+
+## 2026-07-09 Static notices/disclosures
+
+- Request: Add a login-free static notice/disclosure feature to the current deployed TwoMenGames homepage without redesigning the site.
+- Current structure: static `index.html`, `styles.css`, `script.js`, assets, no package/build pipeline, i18n through JS dictionaries and `data-i18n`.
+- Chosen data structure: JSON files under `content/notices/{ko,en}/` plus `content/notices/manifest.json`; no Markdown parser or package added.
+- Routes: `/notices/` for list, `/notices/detail.html?slug=...` for detail, `/privacy.html`, `/email-rejection.html`.
+- Security boundary: no login, signup, admin, DB, CMS, Supabase, Firebase, forms, comments, upload, visitor input storage, JWT, OAuth, or sessions.
+- Existing content boundary: preserve current game/studio copy, Steam/trailer/SNS/email links, and image paths.

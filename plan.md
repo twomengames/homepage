@@ -143,6 +143,17 @@
 5. Keep image assets and Steam URL slug unchanged: complete.
 6. Verify local/public text and publish through Git: complete.
 
+## Static notices/disclosures plan
+
+1. Inspect existing static site, i18n, nav, footer, and CSS structure: complete.
+2. Choose static JSON notice files instead of CMS/DB/Markdown build tooling: complete.
+3. Add Notices nav item between Gallery and Contact: complete.
+4. Add `/notices/` list and `/notices/detail.html?slug=...` detail page: complete.
+5. Add KO/EN sample notice and disclosure JSON files: complete.
+6. Add static privacy and email rejection policy pages: complete.
+7. Update README with notice workflow, local preview, build/deploy, and security rationale: complete.
+8. Verify JSON, JS, links, responsive rendering, and no forbidden dynamic features: complete.
+
 ## Email one-line desktop fix plan
 
 1. 현재 이메일 카드 CSS 확인: 완료.

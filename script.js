@@ -5,6 +5,7 @@ const translations = {
     navAbout: "About",
     navGame: "Game",
     navGallery: "Gallery",
+    navNotices: "Notices",
     navContact: "Contact",
     heroEyebrow: "Seoul-based PC indie game studio",
     heroSlogan: "Luck Changes Everything.",
@@ -67,6 +68,8 @@ const translations = {
     contactEyebrow: "Contact",
     contactTitle: "Business inquiries and official channels.",
     contactCopy: "For press and business inquiries, please contact us by email.",
+    footerPrivacy: "Privacy Policy",
+    footerEmailPolicy: "Email Rejection Policy",
     footerTag: "Indie Game Studio",
   },
   ko: {
@@ -75,6 +78,7 @@ const translations = {
     navAbout: "스튜디오",
     navGame: "게임",
     navGallery: "갤러리",
+    navNotices: "공지/공시",
     navContact: "문의",
     heroEyebrow: "",
     heroSlogan: "끝내기 전에 한 판 더",
@@ -137,6 +141,8 @@ const translations = {
     contactEyebrow: "문의",
     contactTitle: "비즈니스 문의 및 공식 채널",
     contactCopy: "보도자료 및 기타 비즈니스 문의는 아래 이메일로 연락해 주세요.",
+    footerPrivacy: "개인정보처리방침",
+    footerEmailPolicy: "이메일무단수집거부",
     footerTag: "인디 게임 스튜디오",
   },
 };

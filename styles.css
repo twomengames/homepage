@@ -194,6 +194,8 @@ a {
 .stat-grid,
 .screenshot,
 .card,
+.notice-card,
+.policy-card,
 .press-inner,
 .steam-card,
 .contact-grid {
@@ -661,6 +663,122 @@ h3 {
   outline-offset: 3px;
 }
 
+.subpage-main {
+  min-height: calc(100vh - 160px);
+  padding-top: 112px;
+}
+
+.subpage-hero {
+  padding-bottom: 54px;
+}
+
+.subpage-kicker {
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.subpage-title {
+  font-size: clamp(36px, 5vw, 70px);
+  line-height: 0.98;
+  margin-bottom: 18px;
+  max-width: 900px;
+}
+
+.subpage-copy {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 760px;
+}
+
+.notice-list {
+  display: grid;
+  gap: 18px;
+}
+
+.notice-card,
+.policy-card {
+  background: linear-gradient(180deg, rgba(21, 27, 32, 0.94), rgba(12, 16, 20, 0.94));
+  border: 1px solid var(--line);
+  padding: 26px;
+}
+
+.notice-card {
+  display: grid;
+  gap: 12px;
+}
+
+.notice-card:hover {
+  border-color: rgba(53, 210, 198, 0.42);
+  transform: translateY(-2px);
+}
+
+.notice-meta {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  gap: 10px;
+}
+
+.notice-category {
+  background: var(--teal-soft);
+  color: var(--teal);
+  font-weight: 800;
+  padding: 3px 8px;
+}
+
+.notice-card h2,
+.notice-card h3,
+.policy-card h2 {
+  margin-bottom: 8px;
+}
+
+.notice-card p,
+.policy-card p,
+.policy-card li {
+  color: var(--muted);
+}
+
+.notice-detail-body {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.notice-actions,
+.policy-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.empty-state {
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  padding: 28px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: var(--muted);
+}
+
+.footer-links a:hover {
+  color: var(--text);
+}
+
 .contact-value {
   display: block;
   font-size: clamp(16px, 1.2vw, 22px);
@@ -865,5 +983,14 @@ h3 {
   .footer {
     display: grid;
     gap: 8px;
+  }
+
+  .subpage-main {
+    padding-top: 76px;
+  }
+
+  .notice-card,
+  .policy-card {
+    padding: 20px;
   }
 }

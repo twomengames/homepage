@@ -15,6 +15,11 @@
 - Prevention: Search `index.html`, `script.js`, and `notion-twomengames-homepage.md`; do not rewrite image file paths or Steam URL slugs when the request says image-based content should stay.
 - Deploy note: Bump the `script.js` query string so cached pages fetch the updated title copy.
 
+## 2026-07-09 Static notice feature
+- Situation: A static host cannot automatically enumerate new files in a directory from browser JavaScript.
+- Prevention: Keep `content/notices/manifest.json` as the explicit static registry; adding a notice requires adding KO/EN JSON files and the slug to the manifest.
+- Security note: Do not add admin login, forms, DB, CMS, Firebase/Supabase, comments, uploads, JWT, OAuth, or session state for notices.
+
 ## 2026-05-06 GitHub Pages stale deploy after Cloudflare purge
 - Situation: Cloudflare cache purge completed, but twomengames.com still served old files.
 - Cause: GitHub Pages deployment for the latest commit failed/cancelled because GitHub did not acquire a hosted runner.

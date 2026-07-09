@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Official notices and disclosures from TwoMenGames.">
+    <title>TwoMenGames | Notices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../#top" aria-label="TwoMenGames home">
+        <img class="brand-logo" src="../assets/twomengames-logo-dark.png" alt="TwoMenGames logo">
+        <span>TwoMenGames</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../#about" data-notice-i18n="navAbout">About</a>
+        <a href="../#game" data-notice-i18n="navGame">Game</a>
+        <a href="../#gallery" data-notice-i18n="navGallery">Gallery</a>
+        <a href="./" data-notice-i18n="navNotices">Notices</a>
+        <a href="../#contact" data-notice-i18n="navContact">Contact</a>
+      </nav>
+      <div class="language-switcher" aria-label="Language selection">
+        <button type="button" data-lang="ko">KO</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </header>
+
+    <main class="subpage-main">
+      <section class="section subpage-hero">
+        <p class="subpage-kicker" data-notice-i18n="noticesEyebrow">Official notices</p>
+        <h1 class="subpage-title" data-notice-i18n="noticesTitle">Notices and disclosures</h1>
+        <p class="subpage-copy" data-notice-i18n="noticesCopy">TwoMenGames shares official notices through static files. No login, comments, or visitor input is used.</p>
+      </section>
+
+      <section class="section">
+        <div class="notice-list" data-notice-list>
+          <div class="empty-state" data-notice-i18n="loading">Loading notices.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>짤 2026 TwoMenGames</span>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="./" data-notice-i18n="navNotices">Notices</a>
+        <a href="../privacy.html" data-notice-i18n="footerPrivacy">Privacy Policy</a>
+        <a href="../email-rejection.html" data-notice-i18n="footerEmailPolicy">Email Rejection Policy</a>
+      </nav>
+      <span data-notice-i18n="footerTag">Indie Game Studio</span>
+    </footer>
+
+    <script src="../notices.js?v=20260709-1" data-page="list" data-content-base="../"></script>
+  </body>
+</html>
