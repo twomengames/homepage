@@ -1,12 +1,12 @@
 # TwoMenGames
 
-## LEGENDARY LUCK DICE / Spawner Hunter
+## AmazingSlotSurvivor
 
 **Luck Changes Everything.**
 
 TwoMenGames is a Seoul-based indie game studio creating PC Steam action games with strong replayability, unique systems, and a cinematic dark fantasy tone.
 
-LEGENDARY LUCK DICE / Spawner Hunter is a stage-based 3D roguelike shooting action game that combines active movement, bullet-hell pressure, and dice-driven luck into explosive run-by-run growth.
+AmazingSlotSurvivor is a stage-based 3D roguelike shooting action game that combines active movement, bullet-hell pressure, and dice-driven luck into explosive run-by-run growth.
 
 - Wishlist on Steam
 - Contact
@@ -35,7 +35,7 @@ Our goal is to build focused PC games that are easy to understand, exciting to r
 
 ## Main Game
 
-### LEGENDARY LUCK DICE / Spawner Hunter
+### AmazingSlotSurvivor
 
 **Genre:** 3D Roguelike Action Survival  
 **Platform:** PC Steam  
@@ -44,7 +44,7 @@ Our goal is to build focused PC games that are easy to understand, exciting to r
 **Studio:** TwoMenGames  
 **Location:** Seoul, Korea
 
-Spawner Hunter is a 3D roguelike action survival game where players fight massive monster waves and hunt powerful Spawners.
+AmazingSlotSurvivor is a 3D roguelike action survival game where players fight massive monster waves and hunt powerful Spawners.
 
 The game is positioned between Vampire Survivors, Risk of Rain 2, and Returnal, expanding familiar survival growth into a 3D action-focused format.
 
@@ -130,7 +130,7 @@ Recommended image style:
 
 ## Wishlist Now
 
-LEGENDARY LUCK DICE / Spawner Hunter is planned as a PC Steam indie game.
+AmazingSlotSurvivor is planned as a PC Steam indie game.
 
 Steam page link: [Add Steam URL]
 

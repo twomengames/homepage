@@ -10,6 +10,11 @@
 - Cause: GitHub CLI/keyring had both `leegunsoodev` and `twomengames`, but `leegunsoodev` was the active account for HTTPS git operations.
 - Fix: Run `gh auth switch -h github.com -u twomengames`, confirm `gh auth status`, then push again.
 
+## 2026-07-09 Game title text update
+- Situation: Old game title appears both in visible HTML and `script.js` i18n copy.
+- Prevention: Search `index.html`, `script.js`, and `notion-twomengames-homepage.md`; do not rewrite image file paths or Steam URL slugs when the request says image-based content should stay.
+- Deploy note: Bump the `script.js` query string so cached pages fetch the updated title copy.
+
 ## 2026-05-06 GitHub Pages stale deploy after Cloudflare purge
 - Situation: Cloudflare cache purge completed, but twomengames.com still served old files.
 - Cause: GitHub Pages deployment for the latest commit failed/cancelled because GitHub did not acquire a hosted runner.

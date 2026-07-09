@@ -212,3 +212,11 @@
 - RED check: `퍼블리셔`, `퍼블리싱`, `publisher`, `publishing`, `publishers`, and `publisher review` were found before editing.
 - Direction: Keep the page as an official studio/game profile with player, press, and general business contact wording only.
 - Git status: `origin` is connected to `https://github.com/twomengames/homepage.git`; branch is `master`.
+
+## 2026-07-09 Game title text update
+
+- Request: Change homepage game title text to `AmazingSlotSurvivor`; leave image-based title assets unchanged.
+- Checked files: `index.html`, `script.js`, `notion-twomengames-homepage.md`.
+- RED check: `AmazingSlotSurvivor` was not present in public title text before editing.
+- Boundary: Keep `assets/legendary-luck-dice-logo.png` and the existing Steam URL slug unchanged because they are asset/link references, not visible title copy.
+- Cache note: update the `script.js` query string when changing i18n text.

@@ -134,6 +134,15 @@
 5. Re-run forbidden-word search and syntax checks: complete.
 6. Commit and push to `origin/master` so GitHub Pages can publish: complete.
 
+## AmazingSlotSurvivor title update plan
+
+1. Search old visible game-title text and run RED check for missing `AmazingSlotSurvivor`: complete.
+2. Update visible/accessibility text in `index.html`: complete.
+3. Update EN/KO i18n Steam copy in `script.js`: complete.
+4. Update reusable Notion homepage draft text: complete.
+5. Keep image assets and Steam URL slug unchanged: complete.
+6. Verify local/public text and publish through Git: complete.
+
 ## Email one-line desktop fix plan
 
 1. 현재 이메일 카드 CSS 확인: 완료.
