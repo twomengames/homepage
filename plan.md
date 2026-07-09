@@ -171,7 +171,8 @@
 5. Reduce privacy policy title size and update first sentence: complete.
 6. Apply same reduced policy title treatment to email rejection page: complete.
 7. Bump CSS query string for changed pages: complete.
-8. Verify locally and deploy: in progress.
+8. Bump notices JS query string for deployed detail renderer: complete.
+9. Verify locally and deploy: in progress.
 
 ## Email one-line desktop fix plan
 

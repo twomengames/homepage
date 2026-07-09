@@ -243,3 +243,4 @@
 - Related screenshot fixes: keep detail body establishment sentence once, reduce long detail title size to avoid overlap, and show footer copyright as `© 2026 TwoMenGames`.
 - Privacy page follow-up: reduce the long privacy title size and remove `정적` from the first policy sentence.
 - Email rejection follow-up: apply the same reduced policy-title treatment and bump the CSS query string so deployed pages avoid stale cached CSS.
+- Live verification follow-up: bump `notices.js` query string as well, because the public detail page kept the old duplicate-summary renderer from `v=20260709-1`.
