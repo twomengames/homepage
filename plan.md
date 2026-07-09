@@ -162,6 +162,17 @@
 4. Update verification script and README references: complete.
 5. Verify locally and deploy: complete.
 
+## Notice page visual cleanup plan
+
+1. Remove notice list hero description text: complete.
+2. Keep establishment detail sentence rendered once: complete.
+3. Reduce notice detail title size to prevent overlap: complete.
+4. Fix footer copyright text on static subpages: complete.
+5. Reduce privacy policy title size and update first sentence: complete.
+6. Apply same reduced policy title treatment to email rejection page: complete.
+7. Bump CSS query string for changed pages: complete.
+8. Verify locally and deploy: in progress.
+
 ## Email one-line desktop fix plan
 
 1. 현재 이메일 카드 CSS 확인: 완료.

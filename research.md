@@ -236,3 +236,10 @@
 - Applied: manifest now contains only `corporate-establishment`.
 - Removed from published content: homepage open sample and head-office relocation sample JSON files.
 - Kept: static JSON notice structure, KO/EN pairing, no login/input/storage behavior.
+
+## 2026-07-09 Notice page visual cleanup
+
+- Request: Remove the notice list hero description line entirely.
+- Related screenshot fixes: keep detail body establishment sentence once, reduce long detail title size to avoid overlap, and show footer copyright as `© 2026 TwoMenGames`.
+- Privacy page follow-up: reduce the long privacy title size and remove `정적` from the first policy sentence.
+- Email rejection follow-up: apply the same reduced policy-title treatment and bump the CSS query string so deployed pages avoid stale cached CSS.

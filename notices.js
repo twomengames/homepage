@@ -9,7 +9,6 @@ const noticeCopy = {
     navContact: "Contact",
     noticesEyebrow: "Official notices",
     noticesTitle: "Notices and disclosures",
-    noticesCopy: "TwoMenGames shares official notices through static files. No login, comments, or visitor input is used.",
     loading: "Loading notices.",
     empty: "No notices are available.",
     backToList: "Back to notices",
@@ -30,7 +29,6 @@ const noticeCopy = {
     navContact: "문의",
     noticesEyebrow: "공식 공지",
     noticesTitle: "공지/공시",
-    noticesCopy: "TwoMenGames는 정적 파일을 통해 공식 공지와 공시를 게시합니다. 로그인, 댓글, 방문자 입력 기능은 사용하지 않습니다.",
     loading: "공지 목록을 불러오는 중입니다.",
     empty: "등록된 공지가 없습니다.",
     backToList: "목록으로 돌아가기",
@@ -165,8 +163,7 @@ const renderDetail = async (language) => {
         <time datetime="${escapeHtml(notice.date)}">${escapeHtml(formatDate(notice.date, language))}</time>
         <span class="notice-category">${escapeHtml(notice.category)}</span>
       </div>
-      <h1 class="subpage-title">${escapeHtml(notice.title)}</h1>
-      <p class="subpage-copy">${escapeHtml(notice.summary)}</p>
+      <h1 class="subpage-title notice-title">${escapeHtml(notice.title)}</h1>
       <div class="notice-detail-body">
         ${notice.body.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
       </div>
