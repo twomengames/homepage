@@ -25,8 +25,8 @@ for (const path of requiredFiles) {
 }
 
 const manifest = await readJson("content/notices/manifest.json");
-if (!Array.isArray(manifest.notices) || manifest.notices.length < 2) {
-  throw new Error("Manifest must contain at least two notices.");
+if (!Array.isArray(manifest.notices) || manifest.notices.length < 1) {
+  throw new Error("Manifest must contain at least one notice.");
 }
 
 const noticesByLanguage = { ko: [], en: [] };

@@ -154,6 +154,14 @@
 7. Update README with notice workflow, local preview, build/deploy, and security rationale: complete.
 8. Verify JSON, JS, links, responsive rendering, and no forbidden dynamic features: complete.
 
+## Corporate establishment disclosure only plan
+
+1. Replace manifest with only `corporate-establishment`: complete.
+2. Add KO/EN corporate establishment JSON dated `2026-05-15`: complete.
+3. Remove old sample notice/disclosure JSON from published content: complete.
+4. Update verification script and README references: complete.
+5. Verify locally and deploy: complete.
+
 ## Email one-line desktop fix plan
 
 1. 현재 이메일 카드 CSS 확인: 완료.

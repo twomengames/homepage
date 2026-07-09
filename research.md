@@ -229,3 +229,10 @@
 - Routes: `/notices/` for list, `/notices/detail.html?slug=...` for detail, `/privacy.html`, `/email-rejection.html`.
 - Security boundary: no login, signup, admin, DB, CMS, Supabase, Firebase, forms, comments, upload, visitor input storage, JWT, OAuth, or sessions.
 - Existing content boundary: preserve current game/studio copy, Steam/trailer/SNS/email links, and image paths.
+
+## 2026-07-09 Corporate establishment disclosure only
+
+- Request: Replace the notice/disclosure list with only one TwoMenGames corporate establishment disclosure dated `2026-05-15`.
+- Applied: manifest now contains only `corporate-establishment`.
+- Removed from published content: homepage open sample and head-office relocation sample JSON files.
+- Kept: static JSON notice structure, KO/EN pairing, no login/input/storage behavior.

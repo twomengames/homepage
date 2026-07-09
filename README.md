@@ -33,7 +33,7 @@ The notice system is intentionally static. It does not use login, signup, commen
 Pages:
 
 - `/notices/` shows the notice list.
-- `/notices/detail.html?slug=website-open` shows a notice detail page.
+- `/notices/detail.html?slug=corporate-establishment` shows a notice detail page.
 
 Data files:
 
@@ -82,6 +82,12 @@ English example:
 ```
 
 The list is sorted by `date` in descending order.
+
+## Current published notice
+
+The current notice list contains one disclosure:
+
+- `corporate-establishment`: TwoMenGames corporate establishment disclosure dated `2026-05-15`.
 
 ## Contact policy
 
