@@ -172,7 +172,8 @@
 6. Apply same reduced policy title treatment to email rejection page: complete.
 7. Bump CSS query string for changed pages: complete.
 8. Bump notices JS query string for deployed detail renderer: complete.
-9. Verify locally and deploy: in progress.
+9. Add `.nojekyll` for static GitHub Pages publishing: complete.
+10. Verify locally and deploy: in progress.
 
 ## Email one-line desktop fix plan
 

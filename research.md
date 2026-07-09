@@ -244,3 +244,4 @@
 - Privacy page follow-up: reduce the long privacy title size and remove `정적` from the first policy sentence.
 - Email rejection follow-up: apply the same reduced policy-title treatment and bump the CSS query string so deployed pages avoid stale cached CSS.
 - Live verification follow-up: bump `notices.js` query string as well, because the public detail page kept the old duplicate-summary renderer from `v=20260709-1`.
+- Pages follow-up: add `.nojekyll` after a transient GitHub Pages build failure on the static-only site.
